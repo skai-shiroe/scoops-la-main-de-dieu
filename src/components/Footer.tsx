@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Phone, MapPin } from "lucide-react";
 
 const Footer = () => (
@@ -5,9 +6,9 @@ const Footer = () => (
     <div className="container mx-auto">
       <div className="grid md:grid-cols-3 gap-8 mb-8">
         <div>
-          <h3 className="font-heading text-2xl mb-3">
+          <Link to="/" className="font-heading text-2xl mb-3 block">
             SCOOPS <span className="text-gold">LA MAIN DE DIEU</span>
-          </h3>
+          </Link>
           <p className="text-primary-foreground/70 text-sm leading-relaxed">
             Société Coopérative Simplifiée au service d'une agriculture durable et solidaire au Togo.
           </p>
@@ -15,11 +16,11 @@ const Footer = () => (
         <div>
           <h4 className="font-semibold mb-3 text-gold">Liens rapides</h4>
           <ul className="space-y-2 text-sm text-primary-foreground/70">
-            <li><a href="#accueil" className="hover:text-primary-foreground transition-colors">Accueil</a></li>
-            <li><a href="#apropos" className="hover:text-primary-foreground transition-colors">À propos</a></li>
-            <li><a href="#activites" className="hover:text-primary-foreground transition-colors">Activités</a></li>
-            <li><a href="#produits" className="hover:text-primary-foreground transition-colors">Produits</a></li>
-            <li><a href="#contact" className="hover:text-primary-foreground transition-colors">Contact</a></li>
+            <li><Link to="/" className="hover:text-primary-foreground transition-colors">Accueil</Link></li>
+            <li><Link to="/a-propos" className="hover:text-primary-foreground transition-colors">À propos</Link></li>
+            <li><Link to="/activites" className="hover:text-primary-foreground transition-colors">Activités</Link></li>
+            <li><Link to="/produits" className="hover:text-primary-foreground transition-colors">Produits</Link></li>
+            <li><Link to="/contact" className="hover:text-primary-foreground transition-colors">Contact</Link></li>
           </ul>
         </div>
         <div>
